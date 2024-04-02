@@ -1,42 +1,132 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Spinnaker&display=swap');
+
+:root{
+  --main-color : #FFD5C2;
+  --second-color : #58A4B0;
+  --third-color : #FEFEFF;
+  --title-typo : 'Dancing Script';
+  --main-typo : 'Spinnaker';
+  --desc-typo : 'Overpass';
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+
+body {
+  width: 100vw;
+  height: 100vh;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#root{
+  box-sizing: border-box;
+  margin : 0;
+  padding : 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;  
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--main-color);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+header{
+  width:100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 
-.card {
-  padding: 2em;
+header > h1{
+  font-family : var(--title-typo);
 }
 
-.read-the-docs {
-  color: #888;
+header > .NavButtons {
+  margin: 2rem;
+  display: flex;
+  width: 35vw;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  font-size: 0.5rem;
+}
+
+header > .NavButtons > button {
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: var(--second-color);
+  background-color: var(--third-color);
+}
+
+#profile{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15vh;
+  background-color: var(--second-color);
+}
+
+#profile > h2{
+  font-family: var(--title-typo);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+
+}
+
+#profile > img {
+  border-radius: 50%;
+  max-width: 35vw;
+  max-height: 15vh;
+}
+
+#status{
+  background-color: var(--third-color);
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 15vh;
+}
+
+
+footer{
+  background-color: var(--second-color);
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#status > #Like > button{
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: var(--second-color);
+  background-color: var(--third-color);
+}
+
+
+
+#status > #Like {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+#status > #Match > button{
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: var(--second-color);
+  background-color: var(--third-color);
+}
+
+#status > #Match{
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
 }

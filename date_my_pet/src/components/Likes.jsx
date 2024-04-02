@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 function Likes({ matchcount }) {
     return (
-        <div>
+        <div id="status">
             <div id="Like">
                 <button alt="Likes">Likes</button>
                 <p id="numberLikes">99</p>
