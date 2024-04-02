@@ -5,7 +5,7 @@ function MyProfil({img,petname}){
     return (
         <div>
             <h2>{petname}</h2>
-            <img alt={petname} src={img}></img>
+            <img alt={petname} src={img} className="imgProfile"></img>
         </div>
     )
 }
