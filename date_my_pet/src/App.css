@@ -126,8 +126,8 @@ footer {
 /* Matching Profile */
 
 .customizeImg {
-  height: 60%;
-  width: 95%;
+  height: 25vh;
+  width: 66vw;
   justify-content: center;
   border-radius: 2.5rem;
   padding-left: 0.5rem;
@@ -147,7 +147,7 @@ h4,
 strong {
   color: var(--text-color);
   font-size: 2rem;
-  font-family: var(--desc-typo);
+  font-family: var(--main-typo);
   text-align: center;
   border: none;
   margin: 0.3rem;

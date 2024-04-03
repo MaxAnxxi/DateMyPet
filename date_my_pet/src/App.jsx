@@ -12,6 +12,11 @@ import Footer from "./components/Footer";
 //pet img
 import Jazzy from "./assets/Jazzy.jpg";
 import Tessla from "./assets/tessla.png";
+import Urssaf from "./assets/Ursaff.jpg";
+import Mitsuki from "./assets/Mitsuki.jpg";
+import Muta from "./assets/Muta.jpg";
+import LaFouine from "./assets/LaFouine.jpg";
+import Satine from "./assets/Satine.jpg";
 
 const petList = [
   {
@@ -23,7 +28,7 @@ const petList = [
     petLoof: "no",
 
     petDescription:
-      "Je suis une belle femelle, qui cherche un chat affectueux pour co-créer mes héritiers, je suis joueuse et sociable, je recherche un mâle pour faire des battards trop mimis, de préférence un roux.bladkzfgevceevf",
+      "Je suis une belle femelle, qui cherche un chat affectueux pour co-créer mes héritiers, je suis joueuse et sociable, je recherche un mâle pour faire des batards trop mimis, de préférence un roux.",
   },
 
   {
@@ -35,11 +40,11 @@ const petList = [
     petLoof: "yes",
 
     petDescription:
-      "Belle et charmante. Elle est dsiponible toutes les 3 semaines,Belle et charmante. Elle est dsiponible toutes les 3 semaines",
+      "Belle et charmante. Elle est disponible toutes les 3 semaines,Belle et charmante. Elle est disponible toutes les 3 semaines",
   },
 
   {
-    petImage: Jazzy,
+    petImage: Urssaf,
 
     petName: "Urssaf",
     petRace: "Sphynx",
@@ -47,8 +52,42 @@ const petList = [
     petLoof: "no",
 
     petDescription:
-      "Je suis sans poil mais vous serez au poil avec moi,Je suis sans poil mais vous serez au poil avec moi,Je suis sans poil mais vous serez au poil avec moi",
+      "Je suis sans poil mais vous serez au poil avec moi. Sphynx mais pas que , je pourrais devenir votre Phare à on",
   },
+  {
+    petImage : Mitsuki,
+    petName: "Mitsuki",
+    petRace: "Sacré de Birmanie",
+    petAge: "2 ans",
+    petLoof : "yes",
+    petDescription : "Petite sacré de Birmanie , cherche à trouver son sacré partenaire !"
+  },
+  {
+    petImage : Muta,
+    petName: "Muta",
+    petRace: "Japon",
+    petAge: "5 ans",
+    petLoof : "no",
+    petDescription : "Coming from far , but willing to make you close to me"
+
+  },
+  {
+    petImage: LaFouine,
+    petName: "LaFouine",
+    petRace: "Batard",
+    petAge: "10 ans",
+    petLoof : "yes",
+    petDescription : "Dans le rap game depuis longtemps , je saurais te satisfaire tel le Prince de Bel Air"
+  },
+  {
+    petImage : Satine,
+    petName : "Satine",
+    petRace : "Goutière",
+    petAge : "3 ans",
+    petLoof : "no",
+    petDescription : "Princesse avec un coeur à prendre , on peut avoir un chaton mais pas 15."
+  }
+
 ];
 
 const Profile = {
