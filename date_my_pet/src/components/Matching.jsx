@@ -27,7 +27,7 @@ function Matching({ pet, clickButton , match , actualMatch }) {
 
       <p>{pet.petDescription}</p>
 
-      <div classNameName="buttons">
+      <div className="buttons">
         <button id="nextButton" alt="next" onClick={clickButton}><img src={cancel_circle} /></button>
         <button id="superCroqButton" onClick={superCroq}><img src={paw1} /></button>
         <button id="likeButton" onClick={clickButton}><img src={heart} /></button>
