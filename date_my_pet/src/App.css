@@ -1,45 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Spinnaker&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Overpass:ital,wght@0,100..900;1,100..900&family=Spinnaker&display=swap");
 
-:root{
-  --main-color : #FFD5C2;
-  --second-color : #58A4B0;
-  --third-color : #FEFEFF;
-  --title-typo : 'Dancing Script';
-  --main-typo : 'Spinnaker';
-  --desc-typo : 'Overpass';
+:root {
+  --main-color: #ffd5c2;
+  --second-color: #58a4b0;
+  --third-color: #fefeff;
+  --text-color: #000000;
+  --title-typo: "Dancing Script";
+  --main-typo: "Spinnaker";
+  --desc-typo: "Overpass";
 }
-
-
 
 body {
   width: 100vw;
   height: 100vh;
 }
 
-#root{
+#root {
   box-sizing: border-box;
-  margin : 0;
-  padding : 0;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: column;
   width: 100vw;
-  height: 100vh;  
+  height: 100vh;
   justify-content: space-between;
   align-items: center;
   background-color: var(--main-color);
 }
 
-
-header{
-  width:100vw;
+header {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 
-header > h1{
-  font-family : var(--title-typo);
+header > h1 {
+  font-family: var(--title-typo);
 }
 
 header > .NavButtons {
@@ -59,7 +56,7 @@ header > .NavButtons > button {
   background-color: var(--third-color);
 }
 
-#profile{
+#profile {
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -68,12 +65,11 @@ header > .NavButtons > button {
   background-color: var(--second-color);
 }
 
-#profile > h2{
+#profile > h2 {
   font-family: var(--title-typo);
   width: 100vw;
   display: flex;
   justify-content: center;
-
 }
 
 #profile > img {
@@ -82,8 +78,7 @@ header > .NavButtons > button {
   max-height: 15vh;
 }
 
-#status{
-  background-color: var(--third-color);
+#status {
   width: 80vw;
   display: flex;
   flex-direction: row;
@@ -92,8 +87,7 @@ header > .NavButtons > button {
   height: 15vh;
 }
 
-
-footer{
+footer {
   background-color: var(--second-color);
   width: 100vw;
   display: flex;
@@ -101,15 +95,13 @@ footer{
   justify-content: center;
 }
 
-#status > #Like > button{
+#status > #Like > button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
   border-color: var(--second-color);
-  background-color: var(--third-color);
+  background-color: var(--second-color);
 }
-
-
 
 #status > #Like {
   display: flex;
@@ -117,16 +109,116 @@ footer{
   gap: 0.5rem;
 }
 
-#status > #Match > button{
+#status > #Match > button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
   border-color: var(--second-color);
-  background-color: var(--third-color);
+  background-color: var(--second-color);
 }
 
-#status > #Match{
+#status > #Match {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+}
+
+/* Matching Profile */
+
+.customizeImg {
+  height: 60%;
+  width: 95%;
+  justify-content: center;
+  border-radius: 2.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.3rem;
+  padding-top: 0.3rem;
+}
+
+figure {
+  background-color: var(--third-color);
+  height: 60vh;
+  width: 70vw;
+  border-radius: 2rem;
+  border-color: var(--second-color);
+}
+
+h4,
+strong {
+  color: var(--text-color);
+  font-size: 2rem;
+  font-family: var(--desc-typo);
+  text-align: center;
+  border: none;
+  margin: 0.3rem;
+  font-size: 1.2rem;
+}
+
+#petName {
+  background-color: var(--second-color);
+  /* border-radius: 0.8rem; */
+  color: var(--third-color-color);
+  font-family: var(--title-typo);
+  font-size: 2rem;
+  margin: 0.3rem;
+  margin-top: 1rem;
+}
+.petCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: stretch;
+  padding: 0rem;
+}
+
+.infoPetCard {
+  border-color: var(--main-color);
+  border-radius: 0.8rem;
+  text-align: center;
+  padding-top: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0rem;
+}
+
+figure p {
+  color: var(--text-color);
+  background-color: var(--main-color);
+  /* border-radius: 0.8rem; */
+  border-color: #000000;
+  font-size: 1rem;
+  font-family: var(--desc-typo);
+  text-align: initial;
+  padding: 0.8rem 0.5rem;
+  margin: 0.3rem;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+  justify-content: space-around;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.8rem;
+  width: 2.5rem;
+  height: 3rem;
+}
+
+#nextButton {
+  background-color: lightcoral;
+  clip-path: circle(45%);
+}
+
+#superCroqButton {
+  background-color: var(--second-color);
+  clip-path: circle(45%);
+}
+
+#likeButton {
+  background-color: lightgreen;
+  clip-path: circle(45%);
 }
