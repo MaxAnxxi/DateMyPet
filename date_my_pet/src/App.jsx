@@ -18,12 +18,12 @@ const petList = [
     petImage: Jazzy,
 
     petName: "Jazzy",
-    petRace: "Sacré de Birmanie",
+    petRace: "Persan Chinchilla",
     petAge: "2 ans",
-    petLoof: "no",
+    petLoof: "yes",
 
     petDescription:
-      "Je suis une belle femelle, qui cherche un chat affectueux pour co-créer mes héritiers, je suis joueuse et sociable, je recherche un mâle pour faire des battards trop mimis, de préférence un roux.bladkzfgevceevf",
+      "Je suis une belle femelle, qui cherche un chat affectueux pour co-créer mes héritiers, je suis joueuse et sociable.",
   },
 
   {
@@ -35,7 +35,7 @@ const petList = [
     petLoof: "yes",
 
     petDescription:
-      "Belle et charmante. Elle est dsiponible toutes les 3 semaines,Belle et charmante. Elle est dsiponible toutes les 3 semaines",
+      "Belle et charmante. Elle est dsiponible toutes les 3 semaines.",
   },
 
   {
@@ -44,10 +44,9 @@ const petList = [
     petName: "Urssaf",
     petRace: "Sphynx",
     petAge: "2 ans",
-    petLoof: "no",
+    petLoof: "yes",
 
-    petDescription:
-      "Je suis sans poil mais vous serez au poil avec moi,Je suis sans poil mais vous serez au poil avec moi,Je suis sans poil mais vous serez au poil avec moi",
+    petDescription: "Je suis sans poil mais vous serez au poil avec moi.",
   },
 ];
 
@@ -55,6 +54,7 @@ const Profile = {
   myImg: Jazzy,
   myPet: "Jazzy",
 };
+
 function App() {
   const [petIndex, setPetIndex] = useState(0);
 

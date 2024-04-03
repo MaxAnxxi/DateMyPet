@@ -1,13 +1,15 @@
-function NavBar(){
-    return (
-        <header>
-            <h1>DateMyPet</h1>
-            <div className="NavButtons">
-                <button alt="Profile">My Profile</button>
-                <button alt="Settings">Settings</button>
-            </div>
-        </header>
-    )
+import logo from "../assets/LogoDMP.png";
+
+function NavBar() {
+  return (
+    <header>
+      <h1>Date My Pet</h1>
+      <div className="NavButtons">
+        <button alt="Profile">👤</button>
+        <button alt="Settings">⚙️</button>
+      </div>
+    </header>
+  );
 }
 
 export default NavBar;

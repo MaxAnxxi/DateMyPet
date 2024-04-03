@@ -22,9 +22,15 @@ function Matching({ pet, clickButton }) {
       <p>{pet.petDescription}</p>
 
       <div class="buttons">
-        <button id="nextButton" onClick={clickButton}></button>
-        <button id="superCroqButton" onClick={clickButton}></button>
-        <button id="likeButton" onClick={clickButton}></button>
+        <button id="nextButton" onClick={clickButton}>
+          ❌
+        </button>
+        <button id="superCroqButton" onClick={clickButton}>
+          🐾
+        </button>
+        <button id="likeButton" onClick={clickButton}>
+          😻
+        </button>
       </div>
     </figure>
   );

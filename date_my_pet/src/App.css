@@ -40,41 +40,40 @@ header > h1 {
 }
 
 header > .NavButtons {
-  margin: 2rem;
+  margin: 0.5rem;
   display: flex;
-  width: 35vw;
   justify-content: flex-end;
-  gap: 0.5rem;
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 header > .NavButtons > button {
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   border-style: solid;
   border-width: 0.25rem;
   border-color: var(--second-color);
   background-color: var(--third-color);
+  clip-path: circle(30%);
 }
 
 #profile {
   width: 100vw;
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-items: center;
-  height: 15vh;
+  height: 10vh;
   background-color: var(--second-color);
+  justify-content: space-around;
 }
 
 #profile > h2 {
   font-family: var(--title-typo);
-  width: 100vw;
   display: flex;
   justify-content: center;
 }
 
 #profile > img {
-  border-radius: 50%;
-  max-width: 35vw;
+  clip-path: ellipse(33% 50%);
+  max-width: 25vw;
   max-height: 15vh;
 }
 
@@ -98,21 +97,26 @@ footer {
 #status > #Like > button {
   border-radius: 0.5rem;
   border-style: solid;
-  border-width: 0.25rem;
-  border-color: var(--second-color);
+  border-width: 0.1rem;
+  padding: 0rem 0.5rem;
   background-color: var(--second-color);
 }
 
 #status > #Like {
   display: flex;
   flex-direction: row;
-  gap: 0.5rem;
+  gap: 0.3rem;
+  background-color: var(--second-color);
+  border: solid 1px var(--third-color);
+  border-radius: 0.5rem;
 }
 
 #status > #Match > button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
+  padding: 0rem 0.5rem;
+  width: 20vw;
   border-color: var(--second-color);
   background-color: var(--second-color);
 }
@@ -121,6 +125,15 @@ footer {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
+  background-color: var(--second-color);
+  border: solid 1px var(--third-color);
+  border-radius: 0.5rem;
+}
+#numberMatch {
+  padding-right: 0.8rem;
+}
+#numberLikes {
+  padding-right: 0.8rem;
 }
 
 /* Matching Profile */
@@ -139,7 +152,7 @@ figure {
   background-color: var(--third-color);
   height: 60vh;
   width: 70vw;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   border-color: var(--second-color);
 }
 
@@ -168,7 +181,7 @@ strong {
   flex-direction: column;
   align-items: center;
   align-items: stretch;
-  padding: 0rem;
+  margin-top: 4rem;
 }
 
 .infoPetCard {
@@ -187,7 +200,7 @@ figure p {
   background-color: var(--main-color);
   /* border-radius: 0.8rem; */
   border-color: #000000;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-family: var(--desc-typo);
   text-align: initial;
   padding: 0.8rem 0.5rem;
@@ -198,11 +211,11 @@ figure p {
 
 .buttons {
   display: flex;
-  gap: 4rem;
+  gap: 1rem;
   justify-content: space-around;
-  padding-left: 6rem;
+  padding-left: 2.5rem;
   padding-right: 6rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.8rem;
   padding-top: 0.8rem;
   width: 2.5rem;
   height: 3rem;
@@ -210,15 +223,15 @@ figure p {
 
 #nextButton {
   background-color: lightcoral;
-  clip-path: circle(45%);
+  clip-path: circle(40%);
 }
 
 #superCroqButton {
   background-color: var(--second-color);
-  clip-path: circle(45%);
+  clip-path: circle(40%);
 }
 
 #likeButton {
   background-color: lightgreen;
-  clip-path: circle(45%);
+  clip-path: circle(40%);
 }
