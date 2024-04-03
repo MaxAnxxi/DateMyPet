@@ -204,6 +204,10 @@ figure p {
 
 /* BUTTONS */
 
+.buttons{
+  display: flex;
+}
+
 .buttons>button {
   /* display: flex; */
   /* flex-direction: row; */
