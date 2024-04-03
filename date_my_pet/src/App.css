@@ -10,6 +10,11 @@
   --desc-typo: "Overpass";
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -35,7 +40,7 @@ header {
   align-items: center;
 }
 
-header > h1 {
+header>h1 {
   font-family: var(--title-typo);
 }
 
@@ -65,7 +70,7 @@ header > .NavButtons > button {
   justify-content: space-around;
 }
 
-#profile > h2 {
+#profile>h2 {
   font-family: var(--title-typo);
   display: flex;
   justify-content: center;
@@ -84,6 +89,7 @@ header > .NavButtons > button {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
+  padding-left: 1rem;
 }
 
 footer {
@@ -94,7 +100,7 @@ footer {
   justify-content: center;
 }
 
-#status > #Like > button {
+#status>#Like>button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.1rem;
@@ -102,7 +108,7 @@ footer {
   background-color: var(--second-color);
 }
 
-#status > #Like {
+#status>#Like {
   display: flex;
   flex-direction: row;
   gap: 0.3rem;
@@ -111,7 +117,7 @@ footer {
   border-radius: 0.5rem;
 }
 
-#status > #Match > button {
+#status>#Match>button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
@@ -121,7 +127,7 @@ footer {
   background-color: var(--second-color);
 }
 
-#status > #Match {
+#status>#Match {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -169,13 +175,14 @@ strong {
 
 #petName {
   background-color: var(--second-color);
-  /* border-radius: 0.8rem; */
+  border-radius: 0.8rem;
   color: var(--third-color-color);
   font-family: var(--title-typo);
   font-size: 2rem;
   margin: 0.3rem;
   margin-top: 1rem;
 }
+
 .petCard {
   display: flex;
   flex-direction: column;
@@ -198,7 +205,7 @@ strong {
 figure p {
   color: var(--text-color);
   background-color: var(--main-color);
-  /* border-radius: 0.8rem; */
+  border-radius: 0.8rem;
   border-color: #000000;
   font-size: 0.9rem;
   font-family: var(--desc-typo);
@@ -209,8 +216,20 @@ figure p {
 
 /* BUTTONS */
 
-.buttons {
+.buttons{
   display: flex;
+}
+
+.buttons>button {
+  /* display: flex; */
+  /* flex-direction: row; */
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 2rem;
+  /* padding-right: 2rem; */
+  padding-bottom: 1.5rem;
+  /* padding-top: 0.8rem; */
+  /* width: 2.5rem; */
   gap: 1rem;
   justify-content: space-around;
   padding-left: 2.5rem;
@@ -234,4 +253,8 @@ figure p {
 #likeButton {
   background-color: lightgreen;
   clip-path: circle(40%);
+}
+
+#likeButton>img {
+  width: 3rem;
 }
