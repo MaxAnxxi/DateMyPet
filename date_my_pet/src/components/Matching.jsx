@@ -1,6 +1,10 @@
 import PropTypes from "prop-types";
 
-function Matching({ pet, clickButton }) {
+function Matching({ pet, clickButton , match , actualMatch }) {
+  function superCroq(){
+      clickButton();
+      match(actualMatch+1);
+  }
   return (
     <figure className="petCard">
       <img className="customizeImg" src={pet.petImage} alt={pet.petName} />
@@ -10,20 +14,18 @@ function Matching({ pet, clickButton }) {
         <h4 id="petAge">{pet.petAge}</h4>
         <h4>
           {pet.petLoof === "yes" ? (
-            <h4>
               <strong>LOOF</strong>
-            </h4>
-          ) : (
-            <p></p>
-          )}
+          ) : 
+          <p></p>
+          }
         </h4>
       </div>
 
       <p>{pet.petDescription}</p>
 
-      <div class="buttons">
+      <div className="buttons">
         <button id="nextButton" onClick={clickButton}></button>
-        <button id="superCroqButton" onClick={clickButton}></button>
+        <button id="superCroqButton" onClick={superCroq}></button>
         <button id="likeButton" onClick={clickButton}></button>
       </div>
     </figure>
@@ -40,6 +42,9 @@ Matching.propTypes = {
     petLoof: PropTypes.string,
     petDescription: PropTypes.string.isRequired,
   }).isRequired,
+  clickButton: PropTypes.func.isRequired,
+  match: PropTypes.func.isRequired,
+  actualMatch : PropTypes.number.isRequired,
 };
 
 export default Matching;

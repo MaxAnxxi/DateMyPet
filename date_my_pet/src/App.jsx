@@ -11,7 +11,7 @@ import Footer from "./components/Footer";
 
 //pet img
 import Jazzy from "./assets/Jazzy.jpg";
-// import Tessla from "./assets/tessla.jpg";
+import Tessla from "./assets/tessla.png";
 
 const petList = [
   {
@@ -27,7 +27,7 @@ const petList = [
   },
 
   {
-    petImage: Jazzy,
+    petImage: Tessla,
 
     petName: "Tessla",
     petRace: "Sacré de Birmanie",
@@ -70,7 +70,7 @@ function App() {
     <>
       <NavBar></NavBar>
       <MyProfil img={Profile.myImg} petname={Profile.myPet} />
-      <Matching pet={petList[petIndex]} clickButton={handleClickButton} />
+      <Matching pet={petList[petIndex]} clickButton={handleClickButton} match={setMatchCount} actualMatch={matchCount} />
       <Likes matchcount={matchCount}></Likes>
       <Footer></Footer>
     </>
