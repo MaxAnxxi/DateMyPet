@@ -186,9 +186,10 @@ strong {
 .petCard {
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: stretch;
-  margin-top: 4rem;
+  margin-top: 2rem;
+  height: 80vh;
+  justify-content: space-around;
 }
 
 .infoPetCard {
@@ -218,43 +219,40 @@ figure p {
 
 .buttons{
   display: flex;
+  justify-content: space-around;
 }
 
 .buttons>button {
-  /* display: flex; */
-  /* flex-direction: row; */
-  gap: 2rem;
+  display: flex;
   justify-content: center;
-  padding-left: 2rem;
-  /* padding-right: 2rem; */
-  padding-bottom: 1.5rem;
-  /* padding-top: 0.8rem; */
-  /* width: 2.5rem; */
-  gap: 1rem;
-  justify-content: space-around;
-  padding-left: 2.5rem;
-  padding-right: 6rem;
-  padding-bottom: 0.8rem;
-  padding-top: 0.8rem;
-  width: 2.5rem;
-  height: 3rem;
+  align-items: center;
+  width : 2vw;
+  height : 2vh;
 }
 
 #nextButton {
-  background-color: lightcoral;
+  background-color: transparent;
   clip-path: circle(40%);
 }
 
 #superCroqButton {
-  background-color: var(--second-color);
+  background-color: transparent;
   clip-path: circle(40%);
 }
 
 #likeButton {
-  background-color: lightgreen;
+  background-color: transparent;
   clip-path: circle(40%);
 }
 
 #likeButton>img {
-  width: 3rem;
+  width: 2rem;
+}
+
+#superCroqButton> img {
+  width : 2rem;
+}
+
+#nextButton > img {
+  width : 2rem;
 }
