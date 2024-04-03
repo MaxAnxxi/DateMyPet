@@ -10,6 +10,11 @@
   --desc-typo: "Overpass";
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
   width: 100vw;
   height: 100vh;
@@ -35,11 +40,11 @@ header {
   align-items: center;
 }
 
-header > h1 {
+header>h1 {
   font-family: var(--title-typo);
 }
 
-header > .NavButtons {
+header>.NavButtons {
   margin: 2rem;
   display: flex;
   width: 35vw;
@@ -48,7 +53,7 @@ header > .NavButtons {
   font-size: 0.5rem;
 }
 
-header > .NavButtons > button {
+header>.NavButtons>button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
@@ -65,14 +70,14 @@ header > .NavButtons > button {
   background-color: var(--second-color);
 }
 
-#profile > h2 {
+#profile>h2 {
   font-family: var(--title-typo);
   width: 100vw;
   display: flex;
   justify-content: center;
 }
 
-#profile > img {
+#profile>img {
   border-radius: 50%;
   max-width: 35vw;
   max-height: 15vh;
@@ -85,6 +90,7 @@ header > .NavButtons > button {
   justify-content: space-around;
   align-items: center;
   height: 15vh;
+  padding-left: 1rem;
 }
 
 footer {
@@ -95,7 +101,7 @@ footer {
   justify-content: center;
 }
 
-#status > #Like > button {
+#status>#Like>button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
@@ -103,13 +109,13 @@ footer {
   background-color: var(--second-color);
 }
 
-#status > #Like {
+#status>#Like {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
 }
 
-#status > #Match > button {
+#status>#Match>button {
   border-radius: 0.5rem;
   border-style: solid;
   border-width: 0.25rem;
@@ -117,7 +123,7 @@ footer {
   background-color: var(--second-color);
 }
 
-#status > #Match {
+#status>#Match {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
@@ -139,7 +145,7 @@ figure {
   background-color: var(--third-color);
   height: 60vh;
   width: 70vw;
-  border-radius: 2rem;
+  border-radius: 2.5rem;
   border-color: var(--second-color);
 }
 
@@ -156,19 +162,21 @@ strong {
 
 #petName {
   background-color: var(--second-color);
-  /* border-radius: 0.8rem; */
+  border-radius: 0.8rem;
   color: var(--third-color-color);
   font-family: var(--title-typo);
   font-size: 2rem;
   margin: 0.3rem;
   margin-top: 1rem;
 }
+
 .petCard {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-items: stretch;
   padding: 0rem;
+  margin-top: 4rem;
 }
 
 .infoPetCard {
@@ -185,7 +193,7 @@ strong {
 figure p {
   color: var(--text-color);
   background-color: var(--main-color);
-  /* border-radius: 0.8rem; */
+  border-radius: 0.8rem;
   border-color: #000000;
   font-size: 1rem;
   font-family: var(--desc-typo);
@@ -196,29 +204,45 @@ figure p {
 
 /* BUTTONS */
 
-.buttons {
-  display: flex;
-  gap: 4rem;
-  justify-content: space-around;
-  padding-left: 6rem;
-  padding-right: 6rem;
-  padding-bottom: 0.5rem;
-  padding-top: 0.8rem;
-  width: 2.5rem;
+.buttons>button {
+  /* display: flex; */
+  /* flex-direction: row; */
+  gap: 2rem;
+  justify-content: center;
+  padding-left: 2rem;
+  /* padding-right: 2rem; */
+  padding-bottom: 1.5rem;
+  /* padding-top: 0.8rem; */
+  /* width: 2.5rem; */
   height: 3rem;
 }
 
 #nextButton {
-  background-color: lightcoral;
-  clip-path: circle(45%);
+  background-color: transparent;
+  border-style: none;
+  /* clip-path: circle(45%); */
+}
+
+#nextButton>img {
+  width: 3rem;
 }
 
 #superCroqButton {
-  background-color: var(--second-color);
-  clip-path: circle(45%);
+  background-color: transparent;
+  border-style: none;
+  /* clip-path: circle(40%); */
+}
+
+#superCroqButton>img {
+  width: 3rem;
 }
 
 #likeButton {
-  background-color: lightgreen;
-  clip-path: circle(45%);
+  background-color: transparent;
+  border-style: none;
+  /* clip-path: circle(45%); */
+}
+
+#likeButton>img {
+  width: 3rem;
 }
