@@ -1,4 +1,8 @@
 import PropTypes from "prop-types";
+import cancel_circle from "../assets/close.png"
+import paw1 from "../assets/paw(1).png"
+import heart from "../assets/heart(1).png"
+
 
 function Matching({ pet, clickButton , match , actualMatch }) {
   function superCroq(){
@@ -23,10 +27,10 @@ function Matching({ pet, clickButton , match , actualMatch }) {
 
       <p>{pet.petDescription}</p>
 
-      <div className="buttons">
-        <button id="nextButton" onClick={clickButton}></button>
-        <button id="superCroqButton" onClick={superCroq}></button>
-        <button id="likeButton" onClick={clickButton}></button>
+      <div classNameName="buttons">
+        <button id="nextButton" alt="next" onClick={clickButton}><img src={cancel_circle} /></button>
+        <button id="superCroqButton" onClick={superCroq}><img src={paw1} /></button>
+        <button id="likeButton" onClick={clickButton}><img src={heart} /></button>
       </div>
     </figure>
   );
